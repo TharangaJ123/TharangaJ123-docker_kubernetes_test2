@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Chockout code
-        uses: actions/login-action@v4
+        uses: actions/checkout@v4
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
