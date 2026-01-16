@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 mongoose.connect(process.env.MONGO_URL)
-  .then(() => console.log("MongoDB connected"))
+  .then(() => console.log("Hooray,MongoDB connected"))
   .catch(err => console.error(err));
 
 app.get("/", (req, res) => {
